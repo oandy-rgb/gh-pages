@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>量子力學 — Onden</title>
+<title>筆記設計核心 — Onden</title>
 <style>/* ── Reset ── */
 *{box-sizing:border-box;margin:0;padding:0}
 
@@ -476,10 +476,16 @@ hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
     <a class="pl-item" href="../patchscope/"><h3>patchscope</h3></a>
     <a class="pl-item" href="../筆記設計核心/"><h3>筆記設計核心</h3></a>
     <a class="pl-item" href="../brand-new-draft/"><h3>Brand new draft</h3></a></div>
-<article class="markdown-body"><h1>量子力學</h1>
-<p>俗話說得好：遇事不決，量子力學。
-是時候來研究了，<a class="internal new" href="/site/量子電腦/">量子電腦</a></p></article>
-<nav class="prev-next-block"><a href="../the-quadrant-drive-model人生四象限驅動模型聽起來很帥/" class="pn-prev"><span class="pn-label">← Previous</span><span class="pn-title">The Quadrant Drive Model（人生四象限驅動模型）（聽起來很帥）</span></a><a href="../ai時代從基本功下手/" class="pn-next"><span class="pn-label">Next →</span><span class="pn-title">ai時代從基本功下手</span></a></nav>
+<article class="markdown-body"><h1>筆記設計核心</h1>
+<p>以note為node的核心設計，同時有傳統的資料夾視角（樹），萬物皆為節點，資料夾，也有類似白板供創意發想的視角（圖），而全局圖是方便快速定位重要節點以及顏色渲染來判斷tag的權限到哪裡。
+1.透過event log記錄以note層級以上的操作，git負責note本身的操作，可以隨時存快照紀錄當前狀態，然而引進git會讓資料庫不再是唯一事實來源，不引進會讓note的紀錄變瑣碎，我目前是拿git當導出與備份，順便能跑github action發布靜態網站，挺好
+2.tag使得node有三種特性Schema——這個 node有哪些欄位，Policy——誰可以看、可以做什麼操作
+，Behaviour——定義生命週期，達成類似OOP的效果，還能引進Block 層級 tag：用 standoff annotation 存範圍，{start, end, tag, noteId}。官方能提供幾種預製的tag，例如打#anki自動將筆記變成flashcard之類的。
+3.透過astro負責渲染網站，tailwindcss負責渲染元件，puck定義組件，達成使用者能透過拖拉來自由編排網站後發布，組件支援純前端或是全端的邏輯。
+4.以server為主，將網站設計成不論有無伺服器只要打開網站就能用，但默認是sqlite，如果後來開啟伺服器則自動連結postgresql，將本地端資料與server同步並寫入event log裡
+5.支援多人讀寫，與ai agent協作能力等，event log負責審計與復原，而tag負責權限以及能拿來做什麼
+6.能透過快照製作一個CoW的沙盒管理，賦予agent跟人類能操作哪些tag的權限管理，在這個沙盒裡能用crdt達成即時協作，退出時跟斷網重連邏輯一樣自動將所有東西寫進event log裡</p></article>
+<nav class="prev-next-block"><a href="../patchscope/" class="pn-prev"><span class="pn-label">← Previous</span><span class="pn-title">patchscope</span></a><a href="../brand-new-draft/" class="pn-next"><span class="pn-label">Next →</span><span class="pn-title">Brand new draft</span></a></nav>
     </div>
     
   </div>
@@ -523,7 +529,7 @@ hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
     <a class="" href="../關於最近/">關於最近</a>
     <a class="" href="../日常/">日常</a>
     <a class="" href="../the-quadrant-drive-model人生四象限驅動模型聽起來很帥/">The Quadrant Drive Model（人生四象限驅動模型）（聽起來很帥）</a>
-    <a class="active" href="../量子力學/">量子力學</a>
+    <a class="" href="../量子力學/">量子力學</a>
     <a class="" href="../ai時代從基本功下手/">ai時代從基本功下手</a>
     <a class="" href="../ai/">ai</a>
     <a class="" href="../生成式ai時代下的機器學習2025/">生成式ai時代下的機器學習2025</a>
@@ -539,7 +545,7 @@ hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
     <a class="" href="../數學與演算法證明/">數學與演算法證明</a>
     <a class="" href="../obsidian同步/">obsidian同步</a>
     <a class="" href="../patchscope/">patchscope</a>
-    <a class="" href="../筆記設計核心/">筆記設計核心</a>
+    <a class="active" href="../筆記設計核心/">筆記設計核心</a>
     <a class="" href="../brand-new-draft/">Brand new draft</a>
 </div></aside>
 </div>
