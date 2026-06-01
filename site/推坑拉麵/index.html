@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>推坑拉麵 — Site</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f7f7f4;--sur:#fff;--txt:#20231f;--mut:#687064;--line:#d9ded5;--acc:#2f6f5e;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{background:var(--bg);color:var(--txt);display:flex;min-height:100vh}
+nav{width:256px;flex-shrink:0;min-height:100vh;border-right:1px solid var(--line);
+  background:var(--sur);padding:20px 14px;position:sticky;top:0;height:100vh;overflow-y:auto}
+.brand{font-weight:700;font-size:15px;color:var(--txt);text-decoration:none;
+  display:block;padding:0 6px 14px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.nav-item{display:block;padding:5px 8px;border-radius:5px;color:var(--mut);
+  text-decoration:none;font-size:14px;margin-bottom:1px}
+.nav-item:hover,.nav-item.active{background:var(--bg);color:var(--txt)}
+.nav-item.active{color:var(--acc);font-weight:600}
+main{flex:1;padding:48px 56px;max-width:800px}
+h1{font-size:1.8rem;font-weight:700;margin-bottom:.75rem}
+h2{font-size:1.3rem;font-weight:600;margin:2rem 0 .6rem}
+h3{font-size:1.1rem;font-weight:600;margin:1.5rem 0 .5rem}
+h4{font-size:1rem;font-weight:600;margin:1.2rem 0 .4rem}
+p{line-height:1.75;margin-bottom:1rem}
+ul,ol{margin:0 0 1rem 1.5rem}li{margin-bottom:.35rem;line-height:1.65}
+a{color:var(--acc)}
+code{background:var(--bg);border-radius:3px;padding:1px 5px;font-size:.88em;font-family:monospace}
+pre{background:var(--bg);border-radius:8px;padding:16px;overflow-x:auto;margin-bottom:1rem}
+pre code{background:none;padding:0;font-size:.86em}
+blockquote{border-left:3px solid var(--line);padding-left:14px;color:var(--mut);margin-bottom:1rem}
+img{max-width:100%;border-radius:6px;display:block;margin:1rem 0}
+table{border-collapse:collapse;width:100%;margin-bottom:1rem}
+th,td{border:1px solid var(--line);padding:7px 11px;text-align:left}
+th{background:var(--bg);font-weight:600}
+hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
+@media(max-width:680px){nav{display:none}main{padding:24px 20px}}</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="../">Site</a>
+  <a class="nav-item" href="../ai/">ai</a>
+    <a class="nav-item" href="../權重關係/">權重關係</a>
+    <a class="nav-item" href="../pruning/">pruning</a>
+    <a class="nav-item" href="../人類標註的資料/">人類標註的資料</a>
+    <a class="nav-item" href="../作業系統與計算機組織/">作業系統與計算機組織</a>
+    <a class="nav-item" href="../訓練資料/">訓練資料</a>
+    <a class="nav-item" href="../生成式ai時代下的機器學習2025/">生成式ai時代下的機器學習2025</a>
+    <a class="nav-item" href="../sparse-autoencoder/">Sparse Autoencoder</a>
+    <a class="nav-item" href="../ai共產/">Ai共產？</a>
+    <a class="nav-item" href="../ai-agent/">ai agent</a>
+    <a class="nav-item" href="../ai時代人的存在意義/">ai時代人的存在意義</a>
+    <a class="nav-item" href="../rnn/">rnn</a>
+    <a class="nav-item" href="../skill/">skill</a>
+    <a class="nav-item" href="../殘差連結/">殘差連結</a>
+    <a class="nav-item" href="../生成式ai導論-2024/">生成式ai導論 2024</a>
+    <a class="nav-item" href="../git/">git</a>
+    <a class="nav-item" href="../obsidian同步/">obsidian同步</a>
+    <a class="nav-item" href="../資料區/">資料區</a>
+    <a class="nav-item" href="../編譯器/">編譯器</a>
+    <a class="nav-item" href="../量子電腦/">量子電腦</a>
+    <a class="nav-item" href="../量子力學/">量子力學</a>
+    <a class="nav-item" href="../載入器/">載入器</a>
+    <a class="nav-item" href="../符號表/">符號表</a>
+    <a class="nav-item" href="../程式區/">程式區</a>
+    <a class="nav-item" href="../連結器/">連結器</a>
+    <a class="nav-item" href="../relodata/">relo.data</a>
+    <a class="nav-item" href="../relotext/">relo.text</a>
+    <a class="nav-item" href="../目標檔案/">目標檔案</a>
+    <a class="nav-item" href="../ai時代從基本功下手/">ai時代從基本功下手</a>
+    <a class="nav-item" href="../github配置初始流程/">Github配置初始流程</a>
+    <a class="nav-item" href="../日常/">日常</a>
+    <a class="nav-item active" href="../推坑拉麵/">推坑拉麵</a>
+    <a class="nav-item" href="../忠孝東路走一遍/">忠孝東路走一遍</a>
+    <a class="nav-item" href="../語言/">語言</a>
+    <a class="nav-item" href="../數學與演算法證明/">數學與演算法證明</a>
+    <a class="nav-item" href="../如何讀一本書/">如何讀一本書</a>
+    <a class="nav-item" href="../聲調笑話/">聲調笑話</a>
+    <a class="nav-item" href="../ai個人看法/">Ai個人看法</a>
+    <a class="nav-item" href="../最近更新/">最近更新</a>
+    <a class="nav-item" href="../patchscope/">patchscope</a>
+    <a class="nav-item" href="../無題/">無題</a>
+    <a class="nav-item" href="../量子/">量子</a>
+    <a class="nav-item" href="../rag/">Rag</a>
+    <a class="nav-item" href="../logit-lens/">logit lens</a>
+    <a class="nav-item" href="../關於最近/">關於最近</a>
+    <a class="nav-item" href="../梭哈是種智慧/">梭哈是種智慧</a>
+    <a class="nav-item" href="../繼續推拉麵/">繼續推拉麵</a>
+    <a class="nav-item" href="../改變提示詞/">改變提示詞</a>
+    <a class="nav-item" href="../學習/">學習</a>
+    <a class="nav-item" href="../transformer/">transformer</a>
+    <a class="nav-item" href="../the-quadrant-drive-model人生四象限驅動模型聽起來很帥/">The Quadrant Drive Model（人生四象限驅動模型）（聽起來很帥）</a>
+    <a class="nav-item" href="../近況/">近況</a>
+    <a class="nav-item" href="../末日鐘/">末日鐘</a>
+    <a class="nav-item" href="../調整模型/">調整模型</a>
+</nav>
+<main><p>這是我的 2026 年 1 月份 BlogBlog 同樂會投稿（<a href="https://wiwi.blog/blog/blogblog-party-jan-2026/%EF%BC%89">https://wiwi.blog/blog/blogblog-party-jan-2026/）</a></p>
+<hr>
+<p>怎麼說，一開始有接觸到大概是小時候家人帶我去吃在台北的赤坂拉麵，那時候我覺得最好吃的反而不是他的拉麵本體，而是它的筍乾跟牛蒡絲，它醃製的特別入味我很喜歡，拉麵本身就是很傳統的那種日式拉麵，湯頭挺香的但配料真的很少而且麵條也普普通通，後來應該是因為疫情的關係倒了，有點難過又好像還好（？
+不過也算是讓我對拉麵開始有點印象了</p>
+<p>![[Pasted image 20260126181926.png]]</p>
+<p>然後再來應該是高中吧，當時我的朋友帶我去吃西門的道樂，那時候吃到覺得驚為天人阿，它叉燒飯真的讓我印象深刻，那美乃滋結合小塊叉燒以及鹹甜鹹甜的飯讓我一口接著一口，豚骨拉麵的湯頭與麵條也結合的很好，還有免費加一球麵也是深得我心（後來發現很多店都有），從此決定讓我入了這個坑。<del>現在覺得這家普普就是</del></p>
+<p>![[Pasted image 20260126123916.jpg]]（我發現我不會拍照</p>
+<p>後來也吃了不少知名店家，由於真的太多了所以我打算挑挺喜歡的幾家講一下就好。<del>剩下的可以拿來水文章</del></p>
+<h1>鯛白湯</h1>
+<p>![[Pasted image 20260126180112.png]]</p>
+<p>記得吃過一次之後驚為天人，想說天啊為啥會有這樣鮮甜的湯頭，於是大力拉著我朋友吃，然後我們興沖沖的過去後各自點了一碗就坐下來，過了一會老闆跑來跟我們說他們覺得今天的湯頭因為沒有魚味所以覺得不合格於是決定算我們免費，我心想應該是跟我上次吃的差蠻多於是不報期待喝了一口，發現欸居然也是挺好喝的甚至我還加了湯，然後我們離開前看了一下門口發現他們直接公佈打烊，這樣有良心的老闆我必須點個贊，這家環境也真的很棒，總之在各個細節都可以看到老闆的用心，味道方面我只有一點美中不足的就是他料每樣都加很多有點互搶風味，可惜他幾個月前就倒了...</p>
+<h1>魚堺</h1>
+<p>![[Pasted image 20260126180156.png]]</p>
+<p>這家挺好的示範了如何在較低的價位做出了自己的特色，松露雞白湯居然只要兩百左右我覺得還算便宜，那個叉燒會長這樣是因為他是用煙燻的方式處理，十分特別，也有炸金針菇來平衡整碗的風味，在雙北分店數量不少但好像品管不太穩定？聽說品質略有下降也不知道是不是真的，有機會會再回去試試。</p>
+<h1>千口拉麵</h1>
+<p>![[Pasted image 20260126203650.png]]</p>
+<p>好像是剛開幕時去吃的，目前是我很常去吃的幾家之一，他的雞白湯沒有什麼特別突出的地方味道卻恰到好處，醬油則是略苦帶點回甘各項要素都很好的融合在其中，(除了雞肉丸子我稍微沒那麼喜歡，牛舌很頂級口感十分特別而且很嫩，值得一提的是他的小菜炙燒毛豆熏香味十足，布丁香甜綿密，叉燒飯老樣子普通好吃，總之十分推薦，然後我一直懷疑他的前身是不是eno拉麵，幾乎一模一樣，除了eno晚上會變成酒館好像就沒有差了。</p>
+<hr>
+<p>總之拉麵對我來說有幾個我很喜歡的點，第一是它每家的差異很大（相較於其他類型的食物）而且絕大部份都是好吃的，第二是雖然偏貴但價錢很穩定，基本上最便宜大概兩百最貴大概四百就差不多了，很適合學生黨在週末的時候來上一碗，第三就是無論你是一個人還是有少數幾個朋友聚餐都很適合，雖然在網路上大部分看到的新聞都是負面新聞，但我仍然相當推薦大家有機會可以嘗試看看，我指的當然不是用粉調出來的那種台式拉麵，我發現蠻多人因為一開始接觸的就是這種拉麵又加上看到有少數偏激的店家推出的一些不合理的規矩與有些讓人看了搖頭的言論所以被勸退了，我覺得挺可惜就是了。<del>然後我不能理解為啥一蘭要排隊才吃的到</del></p></main>
+</body>
+</html>
